@@ -1,15 +1,13 @@
 
 describe('Перевірка кнопок ', () => {
-        beforeEach(() => {
+    beforeEach(() => {
+        cy.visit('https://qauto.forstudy.space/', {
+            auth: {
+                username: 'guest',
+                password: 'welcome2qauto'
+            }
 
-            it('Basic HOMEWORK login', () => {
-                cy.visit('https://qauto.forstudy.space/', {
-                    auth: {
-                        username: 'guest',
-                        password: 'welcome2qauto'
-                    }
-                })
-            })
+            });
         it('Перевіряє, що кнопки соцмереж у футері існують і мають правильні посилання', () => {
             cy.get('.socials_link a[href="https://www.facebook.com"]').should('be.visible');
             cy.get('.socials_link a[href="https://t.me/"]').should('be.visible');
