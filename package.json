@@ -18,6 +18,6 @@
   "homepage": "https://github.com/irina777-create/cypres#readme",
   "description": "",
   "devDependencies": {
-    "cypress": "^14.2.0"
+    "cypress": "^14.2.1"
   }
 }
