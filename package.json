@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "register:qauto": "node registerUsers.js ./config.qauto.js",
-    "register:qauto2": "node registerUsers.js ./config.qauto2.js"
+    "register:qauto2": "node registerUsers.js ./config.qauto2.js",
+    "test:ui": "cypress run --reporter mochawesome"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,8 @@
   "homepage": "https://github.com/irina777-create/cypres#readme",
   "description": "",
   "devDependencies": {
-    "cypress": "^14.2.1"
+    "cypress": "^14.2.1",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^5.0.0"
   }
 }
-
