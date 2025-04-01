@@ -16,8 +16,3 @@
     "url": "https://github.com/irina777-create/cypres/issues"
   },
   "homepage": "https://github.com/irina777-create/cypres#readme",
-  "description": "",
-  "devDependencies": {
-    "cypress": "^14.2.1"
-  }
-}
