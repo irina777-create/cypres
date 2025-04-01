@@ -1,9 +1,11 @@
 {
-  "name": "cypres",
+  "name": "lesson-19",
   "version": "1.0.0",
   "main": "cypress.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "register:qauto": "node registerUsers.js ./config.qauto.js",
+    "register:qauto2": "node registerUsers.js ./config.qauto2.js"
   },
   "repository": {
     "type": "git",
@@ -21,3 +23,4 @@
     "cypress": "^14.2.1"
   }
 }
+
