@@ -8,7 +8,7 @@ describe('Car creation and validation', () => {
     };
 
     it('should create car and verify it exists via API', () => {
-        cy.login('user@email.com', 'userpassword'); // твоя кастомна команда
+        cy.login('user@email.com', 'userpassword');
 
         cy.createCarViaUI(carData);
 
