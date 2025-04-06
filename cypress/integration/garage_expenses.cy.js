@@ -3,7 +3,7 @@ import { expensesPage } from '../pages/ExpensesPage';
 
 describe('Garage and Expenses Tests', () => {
     beforeEach(() => {
-        cy.login('user@example.com', 'Password123'); // Добавь команду логина в cypress/support/commands.js
+
     });
 
     it('Should add a car to the garage', () => {
@@ -18,3 +18,5 @@ describe('Garage and Expenses Tests', () => {
         cy.contains('50 L').should('exist');
     });
 });
+
+
