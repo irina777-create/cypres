@@ -1,6 +1,7 @@
 {
   "name": "cypress_project",
   "version": "1.0.0",
+lesson-22
   "devDependencies": {
     "@playwright/test": "^1.51.1",
     "@types/node": "^22.14.0",
