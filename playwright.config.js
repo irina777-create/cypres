@@ -1,11 +1,6 @@
 // @ts-check
 import { defineConfig, devices } from '@playwright/test';
-module.exports = {
-  use: {
-    headless: true,
-    baseURL: 'https://qauto.forstudy.space',
-  },
-};
+
 
 /**
  * Read environment variables from file.
