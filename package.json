@@ -7,6 +7,4 @@ lesson-22
     "@types/node": "^22.14.0",
     "cypress": "*",
     "typescript": "*"
-  },
-  "scripts": {}
-}
+  }

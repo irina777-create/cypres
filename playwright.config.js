@@ -22,7 +22,13 @@ dotenv.config({ path: `.env.${process.env.TEST_ENV || 'test'}` });
     timeout: 5000,
     toHaveScreenshot: {
       maxDiffPixels: 10,
-    },},
+    },
+   },
+      httpCredentials: {
+          username: process.env.HTTP_USERNAME,
+          password: process.env.HTTP_PASSWORD,
+      },
+
 
 // import dotenv from 'dotenv';
 // import path from 'path';
