@@ -8,7 +8,5 @@
     "typescript": "*"
   },
   "scripts": {
-    "setup": "node tests/setup/loginStorageState.js",
-    "test": "npx playwright test"
   }
 }
