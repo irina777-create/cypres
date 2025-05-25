@@ -1,20 +1,12 @@
 {
-  "name": "cypres",
+  "name": "cypress_project",
   "version": "1.0.0",
-  "main": "cypress.config.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.14.0",
+    "cypress": "*",
+    "mochawesome": "^7.1.3",
+    "typescript": "*"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/irina777-create/cypres.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/irina777-create/cypres/issues"
-  },
-  "homepage": "https://github.com/irina777-create/cypres#readme",
-  "description": ""
+  "scripts": {}
 }
