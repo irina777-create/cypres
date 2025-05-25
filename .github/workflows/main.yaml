@@ -1,25 +1,23 @@
 
-name: Cypress Tests in Docker
+name: cypress-run
 
 on:
   push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Run Cypress tests in Docker
+      - name: Run Cypress tests
         run: |
           docker run --rm \
-            -v ${{ github.workspace }}:/e2e \
+            -v ${{ github.workspace }}/cypres:/e2e \
             -w /e2e \
-            -e CYPRESS_baseUrl=https://qauto.forstudy.space \
             cypress/browsers:node-20.9.0-chrome-118.0.5993.88-1-ff-118.0.2-edge-118.0.2088.46-1 \
-            /bin/bash -c "npm ci && npx cypress run --reporter mochawesome"
+            npx cypress run --reporter mochawesome
