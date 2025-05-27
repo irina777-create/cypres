@@ -15,7 +15,7 @@ jobs:
       - name: Run Cypress in Docker
         run: |
           docker run --rm \
-            -v ${{ github.workspace }}/cypres:/e2e \
-            -w /e2e \
+            -v ${{ github.workspace }}/cypres:/cypres \
+            -w /cypres \
             cypress/browsers:node-20.9.0-chrome-118.0.5993.88-1-ff-118.0.2-edge-118.0.2088.46-1 \
             npx cypress run
