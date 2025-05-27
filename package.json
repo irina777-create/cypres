@@ -16,5 +16,8 @@
     "url": "https://github.com/irina777-create/cypres/issues"
   },
   "homepage": "https://github.com/irina777-create/cypres#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "mochawesome": "^7.1.3"
+  }
 }
